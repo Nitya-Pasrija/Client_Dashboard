@@ -36,18 +36,6 @@ export const routes = [
         path: "/tables",
         element: <Tables />,
       },
-      {
-        icon: <BellIcon {...icon} />,
-        name: "notifactions",
-        path: "/notifactions",
-        element: <Notifications />,
-      },
-      {
-        icon: <PaperAirplaneIcon {...icon} />,
-        name: "Gig Listing",
-        path: "#",
-        element: <Home />,
-      },
     ],
   },
   {
