@@ -13,6 +13,8 @@ import {
   Avatar,
 } from "@material-tailwind/react";
 import {
+  ExclamationTriangleIcon,
+  PlusCircleIcon,
   UserCircleIcon,
   Cog6ToothIcon,
   BellIcon,
@@ -83,7 +85,24 @@ export function DashboardNavbar() {
           >
             <Bars3Icon strokeWidth={3} className="h-6 w-6 text-blue-gray-500" />
           </IconButton>
-          <Link to="/auth/sign-in">
+          <a href="https://net-app-c6g5.vercel.app/reportBox">
+            <Button
+              variant="text"
+              color="blue-gray"
+              className="hidden items-center gap-1 px-4 xl:flex"
+            >
+              <ExclamationTriangleIcon className="h-5 w-5 text-blue-gray-500" />
+              Report Someone
+            </Button>
+            <IconButton
+              variant="text"
+              color="blue-gray"
+              className="grid xl:hidden"
+            >
+              <ExclamationTriangleIcon className="h-5 w-5 text-blue-gray-500" />
+            </IconButton>
+          </a>
+          <Link to="#">
             <Button
               variant="text"
               color="blue-gray"
@@ -100,6 +119,23 @@ export function DashboardNavbar() {
               <UserCircleIcon className="h-5 w-5 text-blue-gray-500" />
             </IconButton>
           </Link>
+          <a href="https://net-app-c6g5.vercel.app/giglisting">
+            <Button
+              variant="text"
+              color="blue-gray"
+              className="hidden items-center gap-1 px-4 xl:flex"
+            >
+              <PlusCircleIcon className="h-5 w-5 text-blue-gray-500" />
+              Post Gigs
+            </Button>
+            <IconButton
+              variant="text"
+              color="blue-gray"
+              className="grid xl:hidden"
+            >
+              <PlusCircleIcon className="h-5 w-5 text-blue-gray-500" />
+            </IconButton>
+          </a>
           <IconButton
             variant="text"
             color="blue-gray"

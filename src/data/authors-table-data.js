@@ -17,8 +17,8 @@ export const authorsTableData = [
   },
   {
     img: "/img/team-4.jpeg",
-    name: "Laurent Perrier",
-    email: "laurent@gmail.com",
+    name: "Vedehi ",
+    email: "vedehi@gmail.com",
     job: ["Executive", "Projects"],
     online: true,
     date: "19/09/17",
@@ -33,8 +33,8 @@ export const authorsTableData = [
   },
   {
     img: "/img/bruce-mars.jpeg",
-    name: "Bruce Mars",
-    email: "bruce@gmail.com",
+    name: "Bineet Barman",
+    email: "bineet@gmail.com",
     job: ["Manager", "Executive"],
     online: false,
     date: "04/10/21",

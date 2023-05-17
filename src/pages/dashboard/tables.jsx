@@ -24,7 +24,7 @@ export function Tables() {
           <table className="w-full min-w-[640px] table-auto">
             <thead>
               <tr>
-                {["name", "project", "status", "payment due", ""].map((el) => (
+                {["name", "project", "payment status", "payment due", "", ""].map((el) => (
                   <th
                     key={el}
                     className="border-b border-blue-gray-50 py-3 px-5 text-left"
@@ -79,7 +79,7 @@ export function Tables() {
                         <Chip
                           variant="gradient"
                           color={online ? "green" : "blue-gray"}
-                          value={online ? "online" : "offline"}
+                          value={online ? "Processed" : "Pending"}
                           className="py-0.5 px-2 text-[11px] font-medium"
                         />
                       </td>
@@ -95,6 +95,15 @@ export function Tables() {
                           className="text-xs font-semibold text-blue-gray-600"
                         >
                           Message
+                        </Typography>
+                      </td>
+                      <td className={className}>
+                        <Typography
+                          as="a"
+                          href="https://net-app-c6g5.vercel.app/payment"
+                          className="text-xs font-semibold text-blue-gray-600"
+                        >
+                          Pay
                         </Typography>
                       </td>
                     </tr>
@@ -115,7 +124,7 @@ export function Tables() {
           <table className="w-full min-w-[640px] table-auto">
             <thead>
               <tr>
-                {["companies", "employer", "budget", "completion", ""].map(
+                {["companies", "freelancer", "budget", "completion", ""].map(
                   (el) => (
                     <th
                       key={el}

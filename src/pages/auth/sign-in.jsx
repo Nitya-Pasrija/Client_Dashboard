@@ -26,7 +26,7 @@ export function SignIn() {
             className="mb-4 grid h-28 place-items-center"
           >
             <Typography variant="h3" color="white">
-              Sign In
+              Sign In As a Client
             </Typography>
           </CardHeader>
           <CardBody className="flex flex-col gap-4">
@@ -38,7 +38,7 @@ export function SignIn() {
           </CardBody>
           <CardFooter className="pt-0">
             <Button variant="gradient" fullWidth>
-              Sign In
+              <a href="https://client-dashboard-nitya-pasrija.vercel.app/dashboard/profile">Sign in</a>
             </Button>
             <Typography variant="small" className="mt-6 flex justify-center">
               Don't have an account?
